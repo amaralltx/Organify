@@ -1,0 +1,72 @@
+.sidebar-calendar{
+    margin: 16px;
+    color: rgb(59, 59, 59);
+    width: 246px;
+    height: 285px;
+    border-radius: 8px;
+    border: 2px solid var(--rosinha);
+    background-color: var(--beginhozinho);
+    box-shadow: var(--shadow);
+}
+
+.sidebar-calendar-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.sidebar-calendar-date{
+    font-weight: 600;
+    padding-top: 4px;
+}
+.month-picker{
+    cursor: pointer;
+    display: flex;
+}
+
+.sidebar-calendar-divisor{
+    height: 2px;
+    width: 80%;
+    margin: auto;
+    height: 1px;
+    color: black;
+}
+
+.sidebar-calendar-body {
+    padding: 8px 20px;
+}
+
+
+.sidebar-calendar-week-day, .sidebar-calendar-days{
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(7, 1fr);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.sidebar-calendar-week-day div{
+    display: grid;
+    place-items: center;
+    margin-bottom: 8px;
+}
+
+.sidebar-calendar-days div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+.sidebar-calendar-days-grey{
+    color: rgb(177, 177, 177);
+}
+
+.sidebar-calendar-curr-day {
+    color: var(--rosinha);
+    border: 1px solid var(--rosinha);
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.75);
+}

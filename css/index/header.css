@@ -1,0 +1,124 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--rosinha);
+    /*border-radius: 0 0 16px 16px;*/
+    width: 100%;
+    height: 56px;
+    padding: 8px 24px;
+}
+
+.logo {
+    display: flex;
+    height: 100%;
+}
+.logo-img {
+    height: 100%;
+}
+.logo-txt{
+    text-decoration: none;
+    font-size: 32px;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px 8px;
+    color: white;
+    height: 94%;
+}
+
+.nav-bar{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.search-bar {
+    width: 64%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.search-txt{
+    width: 0;
+    height: 30px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
+    transition: width 0.5s ease-in-out;
+}
+
+.search-txt-alt {
+    padding: 0px 8px;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+#search-icon {
+    cursor: pointer;
+    color: white;
+}
+.search-btn{
+    display: flex;
+    align-items: center;
+    margin: 4px;
+    padding: 4px 8px;
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--rosinha);
+}
+
+.search-btn span{
+    font-size: 32px;
+}
+
+.search-btn-alt{
+    display: flex;
+    align-items: center;
+    margin: 4px;
+    padding: 4px 8px;
+    width: 38px;
+    height: 38px;
+}
+
+.search-btn-alt span{
+    font-size: 30px;
+}
+
+.user-panel{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+.user-name{
+    font-weight: 600;
+    color: white;
+    margin: 8px;
+}
+
+#user-icon {
+    margin: 4px;
+    cursor: pointer;
+    color: white;
+    font-size: 32px;
+    border-radius: 8px;
+    background-color: var(--rosinha);
+    padding: 2px;
+}
+
+#help-btn{
+    margin: 4px;
+    padding: 4px;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    border-radius: 8px;
+    background-color: var(--rosinha);
+}

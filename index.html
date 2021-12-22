@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organify</title>
+    <link rel="stylesheet" href="css/index/index_style.css">
+    <link rel="stylesheet" href="css/index/header.css">
+    <link rel="stylesheet" href="css/index/sidebar_new_task_event.css">
+    <link rel="stylesheet" href="css/index/sidebar_calendar.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat:wght@100&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="body">
+    <div class="header">
+        <div class="logo">
+            <img src="imgs/logo_png.png" alt="" class="logo-img">
+            <a href="" class="logo-txt">ORGANIFY</a>
+        </div>
+        <div class="nav-bar">
+            <form action="" class="search-bar">
+                <input type="search" name="search" class="search-txt" autocomplete="off">
+                <button class="search-btn" type="submit">
+                    <span class="material-icons-outlined" id="search-icon">
+                        search
+                    </span>
+                </button>
+            </form>
+            <div class="user-panel">
+                <span class="material-icons-outlined" id="help-btn">
+                    contact_support
+                </span>
+                <span class="material-icons" id="user-icon">
+                    person
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="main-body">
+        <div class="sidebar">
+            <div class="sidebar-btns">
+                <input type="button" value="Novo" class="new-btn">
+                <div class="new-modal">
+                    <input type="button" value="Tarefa" id="new-week-task" class="new-task-event-btn">
+                    <input type="button" value="Evento" id="new-week-event" class="new-task-event-btn">
+                </div>
+                <button class="change-view-btn"><i class="change-view-icon">
+                        <span class="material-icons-outlined">
+                            calendar_today
+                            <!-- view_week -->
+                        </span>
+                    </i></button>
+            </div>
+
+
+            <div class="new-month-task-modal">
+
+            </div>
+            <div class="new-month-event-modal">
+
+            </div>
+            <div class="new-week-event-modal">
+                <div class="new-week-modal-header">
+                    <span class="exit-btn-new-week-modal" id="exit-btn-new-week-event-modal">x</span>
+                    <input type="text" name="Título" class="new-tittle" placeholder="Título" id="new-event-tittle"
+                        autocomplete="off" maxlength="17">
+
+                    <div class="week-radio">
+                        <input type="radio" name="week-days" id="week-event-radio-dom" value="Dom"
+                            class="week-radio-input">
+                        <label class="week-radio-label" for="week-radio-dom">Dom</label>
+
+                        <input type="radio" name="week-days" id="week-event-radio-seg" value="Seg"
+                            class="week-radio-input">
+                        <label class="week-radio-label" for="week-radio-seg">Seg</label>
+
+                        <input type="radio" name="week-days" id="week-event-radio-ter" value="Ter"
+                            class="week-radio-input">
+                        <label class="week-radio-label" for="week-radio-ter">Ter</label>
+
+                        <input type="radio" name="week-days" id="week-event-radio-qua" value="Qua"
+                            class="week-radio-input">
+                        <label class="week-radio-label" for="week-radio-qua">Qua</label>
+
+                        <input type="radio" name="week-days" id="week-event-radio-qui" value="Qui"
+                            class="week-radio-input">
+                        <label class="week-radio-label" for="week-radio-qui">Qui</label>
+
+                        <input type="radio" name="week-days" id="week-event-radio-sex" value="Sex"
+                            class="week-radio-input">
+                        <label class="week-radio-label" for="week-radio-sex">Sex</label>
+
+                        <input type="radio" name="week-days" id="week-event-radio-sab" value="Sáb"
+                            class="week-radio-input">
+                        <label class="week-radio-label" for="week-radio-sab">Sáb</label>
+
+                    </div>
+                    <div class="new-event-local">
+                        <span> Local</span>
+                        <input type="text" name="" id="new-task-local" placeholder="" maxlength="17">
+                    </div>
+                    <div class="new-task-start">
+                        <span>Horário</span>
+                        <input type="text" name="" class="new-hour" id="new-week-event-hour" placeholder=""
+                            maxlength="5">
+                    </div>
+                </div>
+                <div class="new-week-modal-body">
+                    <textarea name="new-task-desc" id="new-task-description" class="new-description" cols="30" rows="8"
+                        placeholder="Descrição..."></textarea>
+                    <div class="new-save-div">
+                        <input type="button" value="Salvar" id="new-week-event-save" class="new-save">
+                    </div>
+                </div>
+            </div>
+            <div class="new-week-task-modal">
+                <div class="new-week-modal-header">
+                    <span class="exit-btn-new-week-modal" id="exit-btn-new-week-task-modal">x</span>
+                    <input type="text" name="Título" class="new-tittle" placeholder="Título" id="new-task-tittle"
+                        autocomplete="off" maxlength="17">
+
+                    <!--Opções dias semanais ao criar uma task-->
+                    <div class="week-radio">
+                        <input type="radio" name="week-days" id="week-task-radio-dom" value="Dom"
+                            class="week-radio-input">
+                        <label class="week-radio-label" for="week-task-radio-dom">Dom</label>
+
+                        <input type="radio" name="week-days" id="week-task-radio-seg" value="Seg"
+                            class="week-radio-input">
+                        <label class="week-radio-label" for="week-task-radio-seg">Seg</label>
+
+                        <input type="radio" name="week-days" id="week-task-radio-ter" value="Ter"
+                            class="week-radio-input">
+                        <label class="week-radio-label" for="week-task-radio-ter">Ter</label>
+
+                        <input type="radio" name="week-days" id="week-task-radio-qua" value="Qua"
+                            class="week-radio-input">
+                        <label class="week-radio-label" for="week-task-radio-qua">Qua</label>
+
+                        <input type="radio" name="week-days" id="week-task-radio-qui" value="Qui"
+                            class="week-radio-input">
+                        <label class="week-radio-label" for="week-task-radio-qui">Qui</label>
+
+                        <input type="radio" name="week-days" id="week-task-radio-sex" value="Sex"
+                            class="week-radio-input">
+                        <label class="week-radio-label" for="week-task-radio-sex">Sex</label>
+
+                        <input type="radio" name="week-days" id="week-task-radio-sab" value="Sáb"
+                            class="week-radio-input">
+                        <label class="week-radio-label" for="week-task-radio-sab">Sáb</label>
+
+                    </div>
+                    <div class="new-task-start">
+                        <span>Horário</span>
+                        <input type="text" name="" class="new-hour" id="new-week-task-hour" placeholder=""
+                            maxlength="5">
+                    </div>
+                </div>
+                <div class="new-week-modal-body">
+                    <textarea name="new-task-desc" id="new-week-task-description" cols="30" rows="8"
+                        placeholder="Descrição..." class="new-description"></textarea>
+                    <div class="new-save-div">
+                        <input type="button" value="Salvar" id="new-week-task-save" class="new-save">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="sidebar-calendar">
+                <div class="sidebar-calendar-header">
+
+                    <div class="sidebar-calendar-date">
+                        <span class="sidebar-calendar-month">Agosto</span>
+                        <span> de </span>
+                        <span class="sidebar-calendar-year">2000</span>
+                    </div>
+
+                    <div class="month-picker">
+                        <span class="prev-month">
+                            <pre><span class="material-icons-outlined">
+                            chevron_left
+                            </span></pre>
+                        </span>
+                        <span class="next-month">
+                            <pre><span class="material-icons-outlined">
+                            navigate_next
+                            </span></pre>
+                        </span>
+
+                    </div>
+                </div>
+
+                <hr class="sidebar-calendar-divisor">
+
+                <div class="sidebar-calendar-body">
+                    <div class="sidebar-calendar-week-day">
+                        <div>Dom</div>
+                        <div>Seg</div>
+                        <div>Ter</div>
+                        <div>Qua</div>
+                        <div>Qui</div>
+                        <div>Sex</div>
+                        <div>Sáb</div>
+                    </div>
+                    <div class="sidebar-calendar-days">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="calendar">
+            <div class="weekly-day">
+                <div class="week-name">DOM</div>
+                <span class="week-day-number"></span>
+                <hr class="week-name-border">
+            </div>
+            <div class="weekly-day">
+                <div class="week-name">SEG</div>
+                <span class="week-day-number"></span>
+                <hr class="week-name-border">
+            </div>
+            <div class="weekly-day">
+                <div class="week-name">TER</div>
+                <span class="week-day-number"></span>
+                <hr class="week-name-border">
+            </div>
+            <div class="weekly-day">
+                <div class="week-name">QUA</div>
+                <span class="week-day-number"></span>
+                <hr class="week-name-border">
+            </div>
+            <div class="weekly-day">
+                <div class="week-name">QUI</div>
+                <span class="week-day-number"></span>
+                <hr class="week-name-border">
+            </div>
+            <div class="weekly-day">
+                <div class="week-name">SEX</div>
+                <span class="week-day-number"></span>
+                <hr class="week-name-border">
+            </div>
+            <div class="weekly-day">
+                <div class="week-name">SÁB</div>
+                <span class="week-day-number"></span>
+                <hr class="week-name-border">
+            </div>
+        </div>
+    </div>
+    <script type="module" src="javascript/index_script.js"></script>
+</body>
+
+</html>
